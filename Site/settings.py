@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-j8k#-=)^njme3*!pz=00h6y9gk2k73scec3w=y=_h(!xpsd&(8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = ['.vercel.app','.now.sh']
 
 
 # Application definition
@@ -122,13 +122,16 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 
 STATICFILES_DIRS = [
     BASE_DIR / "static",
     
-    
 ]
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles', 'static')
+
+
 # STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # django_heroku.settings(locals())
 # Default primary key field type
