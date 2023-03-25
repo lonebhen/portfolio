@@ -1,0 +1,173 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    
+    <meta name="author" content="Devcrud">
+    <title>Benjamin | Home </title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="{% static 'vendors/themify-icons/css/themify-icons.css' %}">
+    <!-- Bootstrap  + main styles -->
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    
+    <header class="header">
+        <div class="container">
+            <ul class="social-icons pt-3">
+                <li class="social-item"><a class="social-link text-light" href="http://www.facebook.com/bhenkubi"><i class="ti-facebook"
+                            aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="http://www.twitter.com/lonebhen"><i class="ti-twitter"
+                            aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="mailto:ben.angmortey.com"><i class="ti-google"
+                            aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="http://www.instagram.com/__bhenn_"><i class="ti-instagram"
+                            aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="http://www.github.com/lonebhen"><i class="ti-github"
+                            aria-hidden="true"></i></a></li>
+            </ul>
+            <div class="header-content">
+                <h4 class="header-subtitle">Hello, I am</h4>
+                <h1 class="header-title">Ben Kubi</h1>
+                <h6 class="header-mono">Fullstack Software Engineer | Computer Engineer</h6>
+                <button class="btn btn-primary btn-rounded"><i class="ti-printer pr-2"></i>Print Resume</button>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
+        <div class="container">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="{% url 'home' %}" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'home' %}" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'resume' %}" class="nav-link">Resume</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav brand">
+                    <img src="{% static 'imgs/250.jpg' %}" alt="" class="brand-img">
+                    <li class="brand-txt">
+                        <h5 class="brand-title">Ben Kubi</h5>
+                        <div class="brand-subtitle">Fullstack Developer | Computer Engineer </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="{% url 'portfolio' %}" class="nav-link">Portfolio</a>
+                    </li>
+                    
+                    <li class="nav-item last-item">
+                        <a href="{% url 'contact' %}" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div id="about" class="row about-section">
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">Who is Ben ?</h3>
+                <span class="line mb-5"></span>
+                <h5 class="mb-3">Fullstack Software Engineer</h5>
+                <p class="mt-20">I love to develop softwares and program hardwares</p>
+                <button class="btn btn-outline-danger" ><i class="icon-down-circled2 "></i>Download My CV[Not Available]</button>
+            </div>
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">Personal Info</h3>
+                <span class="line mb-5"></span>
+                <ul class="mt40 info list-unstyled">
+                    <li><span>Birthdate</span> : 23/12/2001</li>
+                    <li><span>Email</span> : ben.angmortey@gmail.com</li>
+                    <li><span>Phone</span> : + (233) 275-278-775</li>
+                    <li><span>Twitter</span> : lonebhen </li>
+                    <li><span>City</span> : Tema,Ghana</li>
+                </ul>
+                <ul class="social-icons pt-3">
+                    <li class="social-item"><a class="social-link" href="http://www.facebook.com/bhenkubi"><i class="ti-facebook"
+                                aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="http://www.twitter.com/lonebhen"><i class="ti-twitter"
+                                aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="mailto:ben.angmortey.com"><i class="ti-google"
+                                aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="http://www.instagram.com/__bhenn_"><i class="ti-instagram"
+                                aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="http://www.github.com/lonebhen"><i class="ti-github"
+                                aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">My Expertise</h3>
+                <span class="line mb-5"></span>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="ti-html5 icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Frontend Design</h6>
+                        <p class="subtitle">HTML,CSS,JS,Bootstrap,Angular, React.</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="ti-settings icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Backend Development</h6>
+                        <p class="subtitle">Python [Django || Flask ].</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="ti-mobile icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Mobile Development</h6>
+                        <p class="subtitle">Flutter.</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="ti-server icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Database Management</h6>
+                        <p class="subtitle">SQL.</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="ti-widget icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Embedded Systems</h6>
+                        <p class="subtitle">Arduino,MSP430,8051uC.</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- core  -->
+    <script src="{% static 'vendors/jquery/jquery-3.4.1.js' %}"></script>
+    <script src="{% static 'vendors/bootstrap/bootstrap.bundle.js' %}"></script>
+    
+    <!-- bootstrap 3 affix -->
+    <script src="{% static 'vendors/bootstrap/bootstrap.affix.js' %}"></script>
+    
+    <!-- Isotope  -->
+    <script src="{%static 'vendors/isotope/isotope.pkgd.js' %}"></script>
+    
+    
+    <script src="{%static 'js/main.js' %}"></script>
+</body>
+</html>

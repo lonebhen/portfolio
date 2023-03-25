@@ -1,0 +1,181 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    
+    <title>Benjamin | Portfolio </title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="{% static 'vendors/themify-icons/css/themify-icons.css' %}">
+    <!-- Bootstrap + main styles -->
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-bl" data-spy="affix" data-offset-top="510">
+        <div class="container">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="{% url 'home' %}" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'home' %}" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'resume' %}" class="nav-link">Resume</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav brand">
+                    <img src="{% static 'imgs/250.jpg' %}" alt="" class="brand-img">
+                    <li class="brand-txt">
+                        <h5 class="brand-title">Ben Kubi</h5>
+                        <div class="brand-subtitle">Embedded Systems Engineer | Developer</div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="{% url 'portfolio' %}" class="nav-link">Portfolio</a>
+                    </li>
+                    
+                    <li class="nav-item last-item">
+                        <a href="{% url 'contact' %}" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section bg-custom-gray" id="portfolio">
+        <div class="container">
+            <h1 class="mb-5"><span class="text-danger">My</span> Portfolio</h1>
+            <div class="portfolio">
+                <div class="filters">
+                    <a href="#" data-filter=".new" class="active">
+                        Web
+                    </a>
+                    <a href="#" data-filter=".advertising">
+                        Mobile
+                    </a>
+                    <a href="#" data-filter=".branding">
+                        Embedded Systems
+                    </a>
+                    
+                </div>
+                <div class="portfolio-container">
+                    <div class="col-md-6 col-lg-4 web new">
+                        <div class="portfolio-item">
+                            <img src="{% static 'imgs/portmanag.jpg' %}" class="img-fluid"
+                                alt="">
+                            <div class="content-holder">
+                                <a class="img-popup" href="{% static 'imgs/portmanag.jpg' %}"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">WEB</h6>
+                                    <p class="subtitle">Designed with knowledge from web-development!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+    
+                    
+                    <div class="col-md-6 col-lg-4 web new">
+                        <div class="portfolio-item">
+                            <img src="{% static 'imgs/schmanag.jpg' %}" class="img-fluid" alt="Unavailable">
+                            <div class="content-holder">
+                                <a class="img-popup" href="{% static 'imgs/schmanag.jpg' %}"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">WEB</h6>
+                                    <p class="subtitle">Designed with knowledge from web-development!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 advertising">
+                        <div class="portfolio-item">
+                            <img src="{% static 'imgs/hosmanag.jpg' %}" class="img-fluid" alt="Unavailable">
+                            <div class="content-holder">
+                                <a class="img-popup" href="{% static 'imgs/hosmanag.jpg' %}"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">MOBILE</h6>
+                                    <p class="subtitle">Made with flutter</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4 advertising new">
+                        <div class="portfolio-item">
+                            <img src="{% static 'imgs/results.png' %}" class="img-fluid"
+                                alt="Unavailable">
+                            <div class="content-holder">
+                                <a class="img-popup" href="{% static 'imgs/results.png' %}"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">Mobile</h6>
+                                    <p class="subtitle">Made with flutter!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+    
+                    
+                    <div class="col-md-6 col-lg-4 branding new">
+                        <div class="portfolio-item">
+                            <img src="{% static 'imgs/microp.jpg' %}" class="img-fluid"
+                                alt="">
+                            <div class="content-holder">
+                                <a class="img-popup" href="{% static 'imgs/microp.jpg' %}"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">Embedded Systems</h6>
+                                    <p class="subtitle">16 bit microprocessor!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 branding">
+                        <div class="portfolio-item">
+                            <img src="{% static 'imgs/therm.png' %}" class="img-fluid"
+                                alt="">
+                            <div class="content-holder">
+                                <a class="img-popup" href="{% static 'imgs/therm.png' %}"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">Embedded Systems</h6>
+                                    <p class="subtitle">Digital Thermometer!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                     
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- core  -->
+    <script src="{% static 'vendors/jquery/jquery-3.4.1.js' %}"></script>
+    <script src="{% static 'vendors/bootstrap/bootstrap.bundle.js' %}"></script>
+    
+    <!-- bootstrap 3 affix -->
+    <script src="{% static 'vendors/bootstrap/bootstrap.affix.js' %}"></script>
+    
+    <!-- Isotope  -->
+    <script src="{%static 'vendors/isotope/isotope.pkgd.js' %}"></script>
+    
+    
+    <script src="{%static 'js/main.js' %}"></script>
+</body>
+</html>
