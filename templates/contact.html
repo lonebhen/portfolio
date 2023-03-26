@@ -58,7 +58,7 @@
                         <div class="contact-form-card">
                             <h4 class="contact-title">Send a message</h4>
                             <form action="mailto:ben.angmortey@gmail.com" method="post" enctype="text/plain">
-                                <!-- {% csrf_token %} -->
+                                {% csrf_token %}
                                 <div class="form-group">
                                     <input class="form-control" type="text" name="name" placeholder="Name *" required>
                                 </div>
@@ -77,14 +77,14 @@
                     <div class="col-lg-4">
                         <div class="contact-info-card">
                             <h4 class="contact-title">Get in touch</h4>
-                            <div class="row mb-2">
+                            <!-- <div class="row mb-2">
                                 <div class="col-1 pt-1 mr-1">
                                     <i class="ti-mobile icon-md"></i>
                                 </div>
                                 <div class="col-10 ">
                                     <h6 class="d-inline">Phone : <br> <span class="text-muted">+ (233) 275-278-775</span></h6>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="row mb-2">
                                 <div class="col-1 pt-1 mr-1">
                                     <i class="ti-map-alt icon-md"></i>
