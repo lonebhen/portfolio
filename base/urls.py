@@ -11,5 +11,5 @@ urlpatterns=[
     path("resume",views.resume,name='resume'),
     path("portfolio",views.portfolio,name='portfolio'),
     path("contact",views.contact,name='contact'),
-    # path("send_email",views.send_email,name='send_email')
+    path("send_email",views.send_email,name='send_email')
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
